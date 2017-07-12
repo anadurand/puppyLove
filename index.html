@@ -1,49 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article:http://ogp.me/ns/article#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Puppy Love" />
+    <meta property="og:type" content="page" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:description" content="Adopción de perritos" />
+    <meta property="og:site_name" content="Puppy Love, i.e. Moz" />
+    <meta property="fb:app_id" content="Your FB_APP_ID" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Your @publisher_handle">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="Adopción de perritos">
+    <meta name="twitter:creator" content="Your @author_handle">
+
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+
     <title>PUPPY LOVE</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <!-- <section class="Portada"> -->
-      <div class="parallax-container">
-        <div class="parallax"><img src="assets/images/banner.jpg"></div>
-        <div class="row">
-          <div class="center-block">
-            <p>PUPPY LOVE</p>
-            <p>ESTAMOS AQUÍ POR LOS CACHORROS <br>ELLOS SON ADORABLES</p>
-            <a href="" class="button">¡ADOPTA!</a>
+    <header class="header row">
+      <div class="col s6 logo">PUPPY LOVE</div>
+      <div class="col s6 menu"><a href="#" data-activates="slide-out" class="button-collapse right"> Menu <i class="material-icons">menu</i></a></div>
+    </header>
+    <ul id="slide-out" class="side-nav">
+      <a href="#" class="close right"><i class="material-icons">close</i></a>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Generic</a></li>
+      <li><a href="#">Elements</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Log in</a></li>
+    </ul>
+    <main>
+      <section class="portada">
+        <div class="portada__black">
+          <div class="center">
+            <div class="portada__animacion col s12">
+              <div class="linea"></div>
+              <h4>PUPPY LOVE</h4>
+              <div class="linea"></div>
+            </div>
+            <div class="show-after">
+              <p class="info">ESTAMOS AQUÍ POR LOS CACHORROS <br>ELLOS SON ADORABLES</p>
+              <a href="" class="btn waves-light waves-effect red">¡ADOPTA!</a>
+              <div class="more">
+                <p>LEER MÁS</p>
+                <img src="assets/images/icons/arrow.svg" alt="boton más información">
+
+              </div>
+            </div>
           </div>
-          <p>LEER MÁS</p>
-          <img src="assets/images/icons/arrow.svg" alt="more">
         </div>
-      </div>
-    <!-- </section> -->
-    <section class="intro section">
-      <div class="row">
-        <p>LOS CACHORROS SON EXCELENTES COMPAÑEROS. <br>¡TENEMOS MUCHOS AMIGOS CANINOS QUE ESPERAN CONOCERTE!</p>
-        <p>Nosotros te ayudaremos a encontrar un cachorro que sea compatible con tu estilo de vida. <br>¡Visite nuestro centro de adopciones para encontrar un pequeño amigo y mucho amor!</p>
-        <div class="">
-          <img src="assets/images/icons/collar.svg" alt="">
-          <img src="assets/images/icons/bone.svg" alt="">
-          <img src="assets/images/icons/pet-plate.svg" alt="">
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="row">
-        <div class="col m5">
+      </section>
+      <section class="intro">
+        <div class="row">
+          <div class="col s12">
+            <p class="intro__title">LOS CACHORROS SON EXCELENTES COMPAÑEROS. <br>¡TENEMOS MUCHOS AMIGOS CANINOS QUE ESPERAN CONOCERTE!</p>
+            <p class="intro__info">Nosotros te ayudaremos a encontrar un cachorro que sea compatible con tu estilo de vida. <br>¡Visite nuestro centro de adopciones para encontrar un pequeño amigo y mucho amor!</p>
+            <div class="intro__img">
+              <img src="assets/images/icons/collar.svg" alt="imagen de collar">
+              <img src="assets/images/icons/bone.svg" alt="imagen de hueso">
+              <img src="assets/images/icons/pet-plate.svg" alt="imagen de plato de comer del perrito">
+            </div>
 
+          </div>
         </div>
-        <div class="col m7">
-
+      </section>
+      <section class="dogImg">
+        <div class="row">
+          <div class="col m5 s12 image">
+            <img src="assets/images/pic01.jpg" alt="imagen perro en skate" class="responsive-img">
+          </div>
+          <div class="col m7 s12 info">
+            <h4 class="info__title">rescatados</h4>
+            <p>Fueron rescatados del abandono o mala crianza. Toos ellos han pasado por un proceso de socialización en los albergues, lo que garantiza su recuperación.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col m5 s12 right image">
+            <img src="assets/images/pic02.jpg" alt="imagen leyendo un libro" class="responsive-img">
+          </div>
+          <div class="col m7 s12 left info">
+            <h4 class="info__title">únicos</h4>
+            <p>Todos son sobrevivientes, son héroes con historias y experencias que los hacen únicos.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m5 s12 image">
+            <img src="assets/images/pic03.jpg" alt="imagen perro mirando" class="responsive-img">
+          </div>
+          <div class="col m7 s12 info">
+            <h4 class="info__title">nobles</h4>
+            <p>Un Puppy Love agradecerá siempre poder compartir su vida a tu lado. Será un amigo fiel que te acompañará y alegrará tus días.</p>
+          </div>
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="row">
+          <div class="col s12">
+            <h4>¿Aún no te convence adoptar un Puppy Love?</h4>
+            <p>Eligiendo adoptar contribuirás a la construcción de un mundo mejor para todos los perros.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <img src="assets/images/icons/bone-rotate.svg" alt="icono de hueso">
+            <h3 class="title">alimentación adecuada</h3>
+            <p>Asegúrate que su dieta vaya de acuerdo a su edad y peso. Es importante para una buena calidad de vida.</p>
+          </div>
+          <div class="col s6">
+            <img src="assets/images/icons/pet-house.svg" alt="icono de casa">
+            <h3 class="title">espacio idóneo</h3>
+            <p>Proporciónale un espacio donde pueda jugar, descansar, desenvolverse y ser parte activa de la vida de tu familia.</p>
+          </div>
+          <div class="col s6">
+            <img src="assets/images/icons/pet.svg" alt="icono de">
+            <h3 class="title">Brinda compañía</h3>
+            <p>Tener un Puppie es de gran beneficio para niños y adultos mayores, siempre que se decida cuidar de una manera responsable.</p>
+          </div>
+          <div class="col s6">
+            <img src="assets/images/icons/track.svg" alt="icono de huella de perrito">
+            <h3 class="title">Responsabilidad</h3>
+            <p>Debemos tener en cuenta que tener un Puppie implica costes econímicos y una atención constante.</p>
+          </div>
+          <div class="col s6">
+            <img src="assets/images/icons/dog.svg" alt="icono de perrito">
+            <h3 class="title">adopta</h3>
+            <p>Será tu mejor amigo y será parte de tu familia.</p>
+          </div>
+          <div class="col s6">
+            <img src="assets/images/icons/track-two.svg" alt="icono de huellitas de perro">
+            <h3 class="title">Apadrina</h3>
+            <p>Puedes apadrinar, los Puppies son amistosos y educados, necesitan tu apoyo</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col s12 m6">
+            <h3>¿Buscas un perrito? Elige Puppy Love y cambia dos vidas</h3>
+            <p>Adoptando ayudas a desincentivar una industria donde se comercializan más de 300 mil perros al año, mal tratando a madres y cachorros.</p>
+          </div>
+          <div class="col s12 m6">
+            <a href="#" class="btn">¡ADOPTA!</a>
+            <a href="#" class="btn">MÁS INFORMACIÓN</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="col s12">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
       </div>
-    </section>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>

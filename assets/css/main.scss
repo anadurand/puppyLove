@@ -1,3 +1,158 @@
+$bg-verde: #22B2A7;
+$bg-slide: #21B1A6;
+$color-text: white;
+$bg-black: #2C323F;
+$border-verde: #1D9F94;
+$bg-morado: #4E5190;
+
 * {
-  
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: $color-text;
+}
+a {
+  color: $color-text;
+}
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 10px;
+  &__change {
+    background-color: $bg-black;
+  }
+  .menu {
+    a {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      i {
+        padding: 0 5px;
+      }
+    }
+  }
+  .logo {
+    visibility: hidden;
+    font-size: 17px;
+    &__change {
+      visibility: visible;
+    }
+  }
+}
+#slide-out {
+  background-color: $bg-slide;
+  padding: 20px 5px 0 0;
+  li {
+    line-height: 3px;
+    padding: 5px 20px;
+    a {
+      display: block;
+      color: $color-text;
+      border-bottom: 1px solid $border-verde;
+    }
+  }
+}
+.portada {
+  height: 650px;
+  background-image: url("../images/banner.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &__black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__animacion {
+    display: inline-block;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    border-top: 2px solid #7F8791;
+    border-bottom: 2px solid white;
+    animation-name: borde;
+    animation-duration: 3s;
+  }
+  .show-after {
+    .info {
+      margin-bottom: 3rem;
+    }
+    .more {
+      position: relative;
+      top: 100px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+@keyframes borde {
+  0% {}
+}
+.intro {
+  min-height: 400px;
+  background-color: $bg-verde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  &__title{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    padding: 3px 0;
+    border-bottom: 1px solid $border-verde;
+  }
+  &__info {
+    font-size: 1.1rem;
+    white-space: 2px;
+  }
+  &__img {
+    img {
+      width: 70px;
+      height: 60px;
+      padding: 0 10px;
+
+    }
+  }
+}
+
+.dogImg {
+  .row {
+    min-height: 214px;
+    background-color: $bg-black;
+    margin: 0;
+    .image {
+      padding: 0;
+    }
+    .info {
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      @media (max-width: 600px) {
+        min-height: 180px;
+        align-items: center;
+      }
+      &__title {
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.reasons {
+  background-color: $bg-morado;
 }
